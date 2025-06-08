@@ -1,24 +1,33 @@
-numbers_list = [1, 56, 7, 27, 23, 0, 202, -34, -13]
-print("Numbers list:", numbers_list)
+string_1 = ("This mail point dot dog Yecheniy is good")
+string_2 = ("apple banana orange table chair window cloud river")
+string_3 = ("function variable list tuple dictionary loop class import module lambda exception")
+string_4 = ("puppy chicken cat fish bird turtle hamster rabbit")
+
+print("String 1:", string_1)
+print("String 2:", string_2)
+print("String 3:", string_3)
+print("String 4:", string_4)
+
+x = int(input("enter an amount of letter  :"))
+
+len_str1 = len(string_1)
+len_str2 = len(string_2)
+len_str3 = len(string_3)
+len_str4 = len(string_4)
 
 
-"""i've got two variants of the task:"""
+string_count = [len_str1, len_str2, len_str3, len_str4] 
+count_greater_than_x = [a for a in string_count if a > x]
+
+print(f"An amount of string with lenghts greater than {x} is {len(count_greater_than_x)}")
 
 
-# numbers = {"a1":1, "b1":56, "c1":7, "d1":27, "e1":23, "f1":0, "g1":202, "h1":-34, "j1":-13}
 
-# def replace_under_zero(dictionary):
-#     """Replace negative values in a dictionary with zero.
-#     """
-#     for key in dictionary:
-#         if dictionary[key] < 0:
-#             dictionary[key] = 0
-#     return dictionary
-    
-# replace_under_zero(numbers)
-# print("Replaced all negative numbers with 0:", list(numbers.values()))
 
-for nums in numbers_list:
-    if nums < 0:
-        numbers_list[numbers_list.index(nums)] = 0
-print("Replaced all negative numbers with 0:", numbers_list)
+
+
+
+
+
+
+
